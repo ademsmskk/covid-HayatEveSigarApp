@@ -10,5 +10,6 @@ public class RiskCalculation
     public bool Cough { get; set; }
     public bool Chronic { get; set; }
     public bool SmellAndTaste { get; set; }
+    public virtual IEnumerable <User>? Users { get; set; }
 
 }
