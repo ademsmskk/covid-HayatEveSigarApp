@@ -7,5 +7,6 @@ public class Address
     public City City { get; set; }
     public int DistrictId { get; set; }
     public District District { get; set; }
+    public virtual IEnumerable <User>? Users { get; set; }
 
 }

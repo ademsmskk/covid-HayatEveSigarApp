@@ -11,6 +11,7 @@ public static class AddressDatabaseBuilder
             entity.Property(e =>e.OpenAddress);
             entity.HasOne(e =>e.City).WithMany(e =>e.Addresses).HasForeignKey(e =>e.CityId);
             entity.HasOne(e =>e.District).WithMany(e =>e.Addresses).HasForeignKey(e =>e.DistrictId);
+            entity.HasMany(e =>e.Users).WithOne(e =>e.Address).HasForeignKey(e =>e.AddressId);
         });
         modelBuilder.Entity<City>(entity =>
         {

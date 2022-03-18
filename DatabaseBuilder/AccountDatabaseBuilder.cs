@@ -24,7 +24,11 @@ public static class AccountDatabaseBuilder
             entity.Property(e => e.TCNumber);
             entity.Property(e => e.Gender);
             entity.Property(e => e.Birtdate);
+            entity.Property(e =>e.CityName);
+            entity.Property(e =>e.DistrictName);
+            entity.Property(e =>e.OpenAddress);
             entity.HasOne(e => e.Accounts);
+
         });
         modelBuilder.Entity<Role>(entity =>
         {
