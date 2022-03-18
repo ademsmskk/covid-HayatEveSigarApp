@@ -21,7 +21,7 @@ public class CovidContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-        // AccountDatabaseBuilder.TableBuilder(modelBuilder);
+        AccountDatabaseBuilder.TableBuilder(modelBuilder);
         // AddressDatabaseBuilder.TableBuilder(modelBuilder);
         // PetDatabaseBuilder.TableBuilder(modelBuilder);
       
