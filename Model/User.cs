@@ -7,6 +7,7 @@ public class User
     public int HesCodeId { get; set; }
     public int RiskCalculationId { get; set; }
     public int AddressId { get; set; }
+    public int AccountId { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string TCNumber { get; set; }

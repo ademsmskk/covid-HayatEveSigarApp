@@ -14,7 +14,7 @@ public static class AccountDatabaseBuilder
             entity.HasKey(e => e.Id);
             entity.Property(e => e.Email).IsRequired();
             entity.Property(e => e.Password).IsRequired();
-            entity.HasOne(e => e.Users);
+            
             });
         modelBuilder.Entity<User>(entity =>
         {
@@ -27,7 +27,8 @@ public static class AccountDatabaseBuilder
             entity.Property(e =>e.CityName);
             entity.Property(e =>e.DistrictName);
             entity.Property(e =>e.OpenAddress);
-            entity.HasOne(e => e.Accounts);
+            entity.HasOne(e =>e.Accounts).WithMany(e =>e.Users).HasForeignKey(e =>e.AccountId);
+
 
         });
         modelBuilder.Entity<Role>(entity =>
