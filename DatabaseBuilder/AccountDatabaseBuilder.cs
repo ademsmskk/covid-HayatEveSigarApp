@@ -17,31 +17,23 @@ public static class AccountDatabaseBuilder
 
             });
         modelBuilder.Entity<Account>().HasData(
- new Account
- {
-     Id = 1,
-     Email = "adem@gmail.com",
-     Password = "pass",
-   
-     Visibility = true,
-     
-
- },
- new Account
- {
-     Id = 2,
-     Email = "ali@gmail.com",
-     Password = "pass",
-   
-     Visibility = true,
-   
-
- });
+        new Account
+        {
+            Id = 1,
+            Email = "adem@gmail.com",
+            Password = "pass",
+            Visibility = true,
 
 
-
+        },
+        new Account
+        {
+            Id = 2,
+            Email = "ali@gmail.com",
+            Password = "pass",
+            Visibility = true,
+        });
 
         SetDataToDB(modelBuilder);
     }
-
 }
