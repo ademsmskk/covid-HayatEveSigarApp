@@ -32,4 +32,19 @@ public class Repository<T> : IRepository<T> where T : class
     {
         dbset.Update(item);
     }
+
+    Task<T> IRepository<T>.Add(T item)
+    {
+        throw new NotImplementedException();
+    }
+
+    Task<T> IRepository<T>.Update(T item)
+    {
+        throw new NotImplementedException();
+    }
+
+    Task IRepository<T>.Delete(int Id)
+    {
+        throw new NotImplementedException();
+    }
 }
