@@ -12,7 +12,7 @@ public class AddressController : ControllerBase
         _IAddressService = addressService;
 
     }
-
+        
     [HttpGet]
     public async Task<List<Address>> GetAllAddresses()
     {

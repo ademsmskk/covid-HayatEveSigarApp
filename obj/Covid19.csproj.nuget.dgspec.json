@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SahaBT Yazılım\\Desktop\\covid\\Covid19.csproj": {}
+    "C:\\Users\\sahabt\\desktop\\covid\\Covid19.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SahaBT Yazılım\\Desktop\\covid\\Covid19.csproj": {
+    "C:\\Users\\sahabt\\desktop\\covid\\Covid19.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SahaBT Yazılım\\Desktop\\covid\\Covid19.csproj",
+        "projectUniqueName": "C:\\Users\\sahabt\\desktop\\covid\\Covid19.csproj",
         "projectName": "Covid19",
-        "projectPath": "C:\\Users\\SahaBT Yazılım\\Desktop\\covid\\Covid19.csproj",
-        "packagesPath": "C:\\Users\\SahaBT Yazılım\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SahaBT Yazılım\\Desktop\\covid\\obj\\",
+        "projectPath": "C:\\Users\\sahabt\\desktop\\covid\\Covid19.csproj",
+        "packagesPath": "C:\\Users\\sahabt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sahabt\\desktop\\covid\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SahaBT Yazılım\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\sahabt\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -77,6 +77,10 @@
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[6.0.1, )"
+            },
+            "QRCoderNetCore": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
